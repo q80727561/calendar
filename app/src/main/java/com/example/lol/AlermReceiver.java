@@ -35,7 +35,7 @@ public class AlermReceiver extends BroadcastReceiver {
         }
         Map<Date, Integer> map=Database.findnearlyTime(context);
         for(Date d:map.keySet())
-        {//遍歷鍵值Date
+        {
             if(d!=null)
             {
                 setAlerm(context,d,map.get(d));//設置鬧鐘測試
